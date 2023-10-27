@@ -24,9 +24,15 @@ void dijkstra(int start, int(&mas)[SIZE][SIZE], int n, int(&dist)[SIZE]) {
 
 void bellmanford(int start, int(&mas)[SIZE][SIZE], int n, int(&dist_bf)[SIZE]) {
 	dist_bf[start] = 0;
-	for (int k = 1; k < n; k++) //путь до 1 ребра, до 2, до 3...
-		for (int i = 0; i < n; i++)
+	for (int k = 1; k < n; k++)
+		for (int i = 0; i < n; i++) {
+			bool any = false;
 			for (int j = 0; j < n; j++)
 				if (dist_bf[i] < INF && mas[i][j] != 0)
-					dist_bf[j] = std::min(dist_bf[j], dist_bf[i] + mas[i][j]);
+					if (dist_bf[j] > dist_bf[i] + mas[i][j]) {
+						dist_bf[j] = dist_bf[i] + mas[i][j];
+						any = true;
+					}
+			if (any)  break;
+		}
 }

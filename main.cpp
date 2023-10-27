@@ -13,21 +13,21 @@ int main() {
 
 	//dijtest3132(mas, 0);
 	//dijtest3132(mas, 1);
-	//dijtest3132(2);
-	//dijtest3132(3);
+	//dijtest3132(mas, 2);
+	//dijtest3132(mas, 3);
 
-	bftest3132(mas, 0);
-	//bftest3132(1);
-	//bftest3132(2);
-	//bftest3132(3);
+	//bftest3132(mas, 0);
+	//bftest3132(mas, 1);
+	//bftest3132(mas, 2);
+	//bftest3132(mas, 3);
 
-	//dijtest33();
-	//bftest33();
+	//dijtest33(mas);
+	//bftest33(mas);
 
-	//dijtest34(0);
-	//dijtest34(1);
+	//dijtest34(mas, 0);
+	//dijtest34(mas, 1);
 
-	//bftest34(0);
-	//bftest34(1);
+	//bftest34(mas, 0);
+	//bftest34(mas, 1);
 
 }

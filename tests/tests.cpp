@@ -42,7 +42,7 @@ void dijtest3132(int(&mas)[SIZE][SIZE], int num) {
 		dijkstra(src, mas, n, dist);
 		auto end = std::chrono::steady_clock::now();
 		auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
-		std::cout << n << " " << elapsed.count() /* << " ms"*/ << std::endl;
+		std::cout << n << " " << elapsed.count() << " ms" << std::endl;
 	}
 }
 
