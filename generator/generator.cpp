@@ -14,7 +14,7 @@ void generate(int(&mas)[SIZE][SIZE], int n, int m, int q, int r) {	//количество 
 			mas[i][j] = 0;
 		}
 	}
-	if (m == n * n) {
+	if (m == n * n) {	//если в графе максимальное количество рёбер
 		for (int i = 0; i < n; i++)
 			for (int j = 0; j < n; j++)
 				mas[i][j] = GetRandomNumber(q, r);
